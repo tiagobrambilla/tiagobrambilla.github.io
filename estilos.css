@@ -1,0 +1,23 @@
+body {
+ background-color: #808080;
+}
+h1 {
+font-family: ubuntu;
+font-style: italic;
+}
+p {
+background-color: #ffffff;
+color: #FF4500;
+border: dotted;
+border-radius: 10px;
+padding: 8px 15px;
+}
+.igor {
+color: #32CD32;
+}
+.andre {
+color: #FF0000;
+}
+.arton {
+color: #0000FF;
+}
