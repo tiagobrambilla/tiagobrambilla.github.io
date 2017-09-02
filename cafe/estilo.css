@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #8FBC8F;
+}
+h2 {
+    color: #000 ;
+}
+.image {
+	margin: 1px 4px 0 0;
+	padding: 1px; /* Tamanho da borda */
+	background-color: #fff; 
+	border: 3px solid #343434; /* Cor da borda */
+	border-radius: 2px;
+	height: 180px;
+	width: 210px;
+}
+
