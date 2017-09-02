@@ -1,0 +1,29 @@
+body {
+	background-color: #1E90FF;
+}
+h2 {
+    color: #000033 ;
+}
+.image {
+	margin: 1px 4px 0 0;
+	padding: 1px; /* Tamanho da borda */
+	background-color: #fff; 
+	border: 3px solid #14396A; /* Cor da borda */
+	border-radius: 2px;
+}
+.botao {
+  font-family: arial;
+  font-weight: bold;
+  color: #14396A !important;
+  font-size: 14px;
+  padding: 8px 15px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #3866A3;
+  background: #63B8EE;
+}
+.botao:hover {
+  color: #14396A !important;
+  background: #468CCF;
+}
