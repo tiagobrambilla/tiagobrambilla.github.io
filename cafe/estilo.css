@@ -22,3 +22,9 @@ h2 {
 	width: 210px;
 }
 
+hr {
+      color: #8C7853;
+      background-color: #8C7853;
+      height: 2px;
+    }
+
