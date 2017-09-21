@@ -3,12 +3,17 @@
 
 body {
 	background-color: #fff;
+    font-family: sans-serif;
 }
 h3 {
-    color: #8C7853 ;
+    color: #460303;
+    font-size: 18px;
+    font-family: sans-serif;
 }
 h2 {
-	color: #8C7853 ;
+	color: #460303;
+    font-size: 18px;
+    font-family: sans-serif;
 }
 
 
@@ -16,15 +21,20 @@ h2 {
 	margin: 1px 4px 0 0;
 	padding: 1px; /* Tamanho da borda */
 	background-color: #fff; 
-	border: 3px solid #8C7853; /* Cor da borda */
+	border: 3px solid #5d3232; /* Cor da borda */
 	border-radius: 2px;
 	height: 180px;
 	width: 210px;
+     -webkit-filter:grayscale(100%);
+}
+.image:hover{
+    -webkit-filter:grayscale(0%);
+    transition: 1s;
 }
 
-hr {
-      color: #8C7853;
-      background-color: #8C7853;
-      height: 2px;
-    }
 
+hr {
+      color: #800000;
+      background-color: #800000;
+      height: 2px;
+}
