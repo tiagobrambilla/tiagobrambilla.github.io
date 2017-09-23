@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body {
-	background-color: #fff;
+    background-color: #fff;
     font-family: sans-serif;
 }
 
@@ -13,7 +13,7 @@ h3 {
     font-family: sans-serif;
 }
 h2 {
-	color: #460303;
+    color: #460303;
     font-size: 18px;
     font-family: sans-serif;
 }
@@ -28,17 +28,17 @@ a {
 a:hover {
 	text-decoration: underline; 
 	color: #f00
-    
 }
+
 /* Imagens */
 .image {
-	margin: 1px 4px 0 0;
-	padding: 1px; /* Tamanho da borda */
-	background-color: #fff; 
-	border: 3px solid #5d3232; /* Cor da borda */
-	border-radius: 2px;
-	height: 180px;
-	width: 210px;
+    margin: 1px 4px 0 0;
+    padding: 1px; /* Tamanho da borda */
+    background-color: #fff; 
+    border: 3px solid #5d3232; /* Cor da borda */
+    border-radius: 2px;
+    height: 180px;
+    width: 210px;
     -webkit-filter:grayscale(100%);
 }
 .image:hover{
@@ -55,10 +55,8 @@ hr {
 
 /* Tabelas */
 table {
-    
     width: 600px;
     height: 300px;
-    
 }
 
 th {
