@@ -5,6 +5,8 @@ body {
 	background-color: #fff;
     font-family: sans-serif;
 }
+
+/* Títulos */
 h3 {
     color: #460303;
     font-size: 18px;
@@ -16,6 +18,7 @@ h2 {
     font-family: sans-serif;
 }
 
+/* Links */
 a {
     color: red;
     font-weight: bold;
@@ -27,7 +30,7 @@ a:hover {
 	color: #f00
     
 }
-
+/* Imagens */
 .image {
 	margin: 1px 4px 0 0;
 	padding: 1px; /* Tamanho da borda */
@@ -36,20 +39,21 @@ a:hover {
 	border-radius: 2px;
 	height: 180px;
 	width: 210px;
-     -webkit-filter:grayscale(100%);
+    -webkit-filter:grayscale(100%);
 }
 .image:hover{
     -webkit-filter:grayscale(0%);
     transition: 1s;
 }
 
-
+/* Linhas */
 hr {
-      color: #800000;
-      background-color: #800000;
-      height: 2px;
+    color: #800000;
+    background-color: #800000;
+    height: 2px;
 }
 
+/* Tabelas */
 table {
     
     width: 600px;
@@ -65,9 +69,9 @@ th {
 }
 
 td {
-   border: 1px solid black;
-   font-family: sans-serif;
-   background-color: #f2f2f2;
+    border: 1px solid black;
+    font-family: sans-serif;
+    background-color: #f2f2f2;
 }
 
 tfoot {
