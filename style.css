@@ -27,3 +27,9 @@ h2 {
   color: #14396A !important;
   background: #468CCF;
 }
+
+hr {
+      color: #000033;
+      background-color: #000033;
+      height: 2px;
+}
