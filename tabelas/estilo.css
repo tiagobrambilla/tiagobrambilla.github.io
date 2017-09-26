@@ -1,40 +1,32 @@
 @charset "utf-8";
 /* CSS Document */
-table {
+.tabelalista {
     width: 800px;
     height: 200px;
     text-align: center;
-}
-
-th {
-    border: 1px solid black;
-    font-family: sans-serif;
-    background-color: #800000;
-    color: white;
-}
-
-td {
-    border: 1px solid black;
-    font-family: sans-serif;
-    background-color: #f2f2f2;
-}
-
-tfoot {
-    font-family: sans-serif;
-    text-align: center;
-    font-size: 13px;
-    color: #848484;
-    background-color: #f2f2f2;
-}
-
-.info {
-    background-color: #800000;
-    color: white;
+    color: black;
+    font-style: bold;
 }
 
 .imagem {
 	height: 180px;
-    width: 260px;
+    width: 270px;
 }
 
+.timagem {
+	height: 180px;
+    width: 270px;
+}
+
+th {
+	background-color: blue;
+}
+
+.tdlista {
+	background-color: green;
+}
+
+.titulotabela {
+	background-color: grey;
+}
 
