@@ -2,10 +2,11 @@
 /* CSS Document */
 .tabelalista {
     width: 800px;
-    height: 200px;
+    height: 170px;
     text-align: center;
     color: black;
     font-style: bold;
+    font-family: sans-serif;
 }
 
 .imagem {
@@ -19,14 +20,17 @@
 }
 
 th {
-	background-color: blue;
+	background-color: #1E90FF;
 }
 
 .tdlista {
-	background-color: green;
+	background-color: #3CB371;
 }
 
 .titulotabela {
 	background-color: grey;
+	color: white;
+	font-family: sans-serif;
+	font-style: bold;
 }
 
