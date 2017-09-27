@@ -29,7 +29,11 @@ h2 {
 }
 
 hr {
-      color: #000033;
-      background-color: #000033;
-      height: 2px;
+   color: #000033;
+   background-color: #000033;
+   height: 2px;
+}
+
+a {
+   text-decoration: none; 
 }
