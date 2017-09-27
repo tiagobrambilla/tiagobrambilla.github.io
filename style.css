@@ -1,17 +1,55 @@
 body {
-	background-color: #1E90FF;
+    background-color: white;
+    font-family: sans-serif;
 }
+
 h2 {
-    color: #000033 ;
+    color: black;
+    font-family: sans-serif;
+    font-size: 22px;
+    color: #460303;
 }
-.image {
-	margin: 1px 4px 0 0;
-	padding: 1px; /* Tamanho da borda */
-	background-color: #fff; 
-	border: 3px solid #14396A; /* Cor da borda */
-	border-radius: 2px;
+
+/* Links */
+a {
+    color: red;
+    font-weight: none;
+    text-decoration: none;
 }
-.botao {
+
+a:hover {
+    text-decoration: underline; 
+    color: #f00
+}
+
+
+#foto {
+    float: right;
+    padding: 15px 10px 10px 25px;
+}
+
+#secao {
+    border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	color: #460303;
+	padding: 25px 0px 0px 0px;
+    font-family: sans-serif;
+    font-size: large;
+	font-weight: bold;
+
+}
+
+ #conteudo {
+    /* background-color: #f5f5f5; */
+    padding: 10px 10px 10px 10px;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+} */
+
+/* #botao {
   font-family: arial;
   font-weight: bold;
   color: #14396A !important;
@@ -23,17 +61,7 @@ h2 {
   border: 2px solid #3866A3;
   background: #63B8EE;
 }
-.botao:hover {
+#botao:hover {
   color: #14396A !important;
   background: #468CCF;
-}
-
-hr {
-   color: #000033;
-   background-color: #000033;
-   height: 2px;
-}
-
-a {
-   text-decoration: none; 
-}
+} */
