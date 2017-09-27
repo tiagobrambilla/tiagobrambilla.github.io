@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Background Color</title>
+
+<!--Ícone da aba:-->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+
+<!--Engine controle de cores:-->
+<script>
+function clicou() {
+
+var r = document.getElementById("red").value
+var g = document.getElementById("green").value
+var b = document.getElementById("blue").value
+
+document.getElementById("fundo").style = "background-color: rgb(" + r + "," + g + "," + b + ");"
+}
+
+</script>
+</head>
+
+
+<body id="fundo">
+<center>
+<!--Controle de cores:-->
+<b>Mude a cor de fundo você mesmo:</b><br>
+R
+<input id="red" type="range" min="0" max="255" value="0" onChange="clicou()">
+<br>
+G
+<input id="green" type="range" min="0" max="255" value="0" onChange="clicou()">
+<br>
+B
+<input id="blue" type="range" min="0" max="255" value="0" onChange="clicou()">
+<br>
+</center>
+</body>
+</html>
+

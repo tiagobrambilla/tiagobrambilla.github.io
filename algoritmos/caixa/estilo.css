@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #215DD7;
+}
+h2 {
+	font-family: arial;
+	background-color: #FFDD00;
+    color: #0D007E;
+	border: solid;
+	border-radius: 10px;
+	padding: 8px 15px;
+	height: 30px;
+  	width: 300px;
+	margin: 10px 10px 0 0;
+}
+.botao {
+  font-family: arial;
+  font-weight: bold;
+  color: #0D007E !important;
+  font-size: 14px;
+  padding: 8px 15px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #0D007E;
+  background: #FFDD00;
+  height: 50px;
+  width: 210px;
+  margin: 10px 10px 0 0;
+}
+.botao:hover {
+  color: #14396A !important;
+  background: #fff;
+}
+
+	

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gerador de Tabela</title>
+
+
+    
+<style>
+table {
+    width: 450px;
+    height: 300px;
+}
+    
+td {
+    border: 1px solid black;
+    font-family: sans-serif;
+    background-color: #a30000;
+    text-align: center;
+    color: white;
+}
+    
+h3 {
+    font-family: sans-serif;
+    color: #a30000;
+    
+}
+</style>
+</head>
+
+<body>
+<center>
+    <h3>Gerador de Tabela</h3>
+    <form action="" id="teste">
+        <input type="number" placeholder="Linhas" id="linhas" />
+        <input type="number" placeholder="Colunas" id="colunas" />
+        <input type="button" value="Gerar Tabela" onClick="gerarTabela()"/>
+    </form> 
+    
+<script> 
+    function gerarTabela(){
+        var tabela = document.createElement("table");
+        var x = document.getElementById("linhas").value;
+        var y = document.getElementById("colunas").value;
+        document.body.appendChild(tabela).setAttribute("align", "center");
+
+            for(i = 0; i < x; i++){
+                        
+            var trx = document.createElement("tr");
+            tabela.appendChild(trx);
+
+                    for(j = 0; j < y; j++) {
+                    var tdy = document.createElement("td");
+                    var txt = document.createTextNode(i + 1 + j + 1);
+                    trx.appendChild(tdy);
+                    tdy.appendChild(txt);
+                    }
+                
+            }
+        
+    }
+</script>
+</center>
+</body>
+
+</html>

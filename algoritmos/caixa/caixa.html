@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Caixa Eletrônico</title>
+<link rel="stylesheet" href="estilo.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<script>
+	var saldo = 0
+	var saques = 0
+	const SENHA_PADRAO = "13579"
+	
+	function deposito() {
+		var valor = parseFloat( prompt("Que valor você deseja depositar?"))
+		
+		if ( (valor > 0) && (valor <= 2000) ) {
+		    saldo = saldo + valor
+		} else {
+			alert("Valor inválido!")
+		}
+	}
+	
+	function mostrarSaldo() {
+		var senha = prompt("Digite a sua senha:")
+		
+		if ( senha == SENHA_PADRAO ) {
+		alert("Seu saldo é R$" + saldo)
+		} else {
+			alert("Senha inválida!")
+		}
+		
+	}
+	
+	function sacar() {
+		
+		var senha = prompt("Digite a sua senha:")
+		
+		if (senha == SENHA_PADRAO) {
+			var valor = parseFloat( prompt("Que valor você deseja sacar?"))
+			
+			var tarifa = 0
+			
+			if (saques >= 3) { 
+				tarifa = 1.5
+			}
+								   
+				if ( saldo >= (valor + tarifa) ) {
+					saques = saques + 1
+					saldo = saldo - valor - tarifa	
+				} else {
+					alert("Saldo insuficiente!")
+				}
+			
+		} else {
+			alert("Senha inválida!")
+		}
+	}
+</script>
+
+</head>
+
+<body>
+<center>
+	<div>
+<h2>Caixa Eletrônico</h2>
+		
+		<input class="botao" type="button" value="SALDO" onClick="mostrarSaldo()">
+		<br>
+		<input class="botao" type="button" value="DEPÓSITO" onClick="deposito()">
+		<br>
+		<input class="botao" type="button" value="SAQUE" onClick="sacar()">
+		<br>
+	</div>
+</center>
+</body>
+</html>

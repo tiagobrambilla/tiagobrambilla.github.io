@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Telefone</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="telefone.css">
+	<script>
+		
+		function discar( numero ) {
+		    var save = document.telefone.visor.value;
+	        document.telefone.visor.value = save + numero;
+	}
+		
+		function chamar() {
+		    var save = document.telefone.visor.value;
+		    document.getElementById("visor").value = "Chamando... " + save;
+	}
+	</script>
+
+</head>
+
+<body>
+	<center>
+	<form name="telefone">
+		<input type="text" class="tela" id="visor" disabled style="width: 212px; height: 30px"><br>
+		<input type="button" class="botao" value="1" onClick="discar( value )" style="width: 76px; height: 60px">
+		<input type="button" class="botao" value="2" onClick="discar( value )" style="width: 76px; height: 60px">
+		<input type="button" class="botao" value="3" onClick="discar( value )" style="width: 76px; height: 60px"><br>
+		<input type="button" class="botao" value="4" onClick="discar( value )" style="width: 76px; height: 60px">
+		<input type="button" class="botao" value="5" onClick="discar( value )" style="width: 76px; height: 60px">
+		<input type="button" class="botao" value="6" onClick="discar( value )" style="width: 76px; height: 60px"><br>
+		<input type="button" class="botao" value="7" onClick="discar( value )" style="width: 76px; height: 60px">
+		<input type="button" class="botao" value="8" onClick="discar( value )" style="width: 76px; height: 60px">
+		<input type="button" class="botao" value="9" onClick="discar( value )" style="width:76px; height: 60px"><br>
+		<input type="button" class="botaoLigar" value="&#9742; &#10003;" onClick="chamar()" style="width: 76px; height: 60px">
+		<input type="button" class="botao" value="0" onClick="discar( value )" style="width:76px; height: 60px">
+		<input type="reset" class="botaoCancelar" value="&#9742; &#10007;" onClick="limpar();" style="width:76px; height: 60px">
+	</form>
+	</center>
+</body>
+</html>

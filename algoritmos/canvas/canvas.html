@@ -1,0 +1,82 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Stickman</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+
+<center>
+<body>
+
+<h2>Stickman in <font color="#FFA500">HTML5 Canvas</font>:</h2> <br>
+</body>
+
+<canvas id="desenho" width="500" height="300"> </canvas>
+
+<script> 
+var canvas = document.getElementById( 'desenho' );
+var context = canvas.getContext( '2d' );
+
+var cor = '#000';
+
+canvas.width = 400;
+canvas.height = 300;
+
+context.fillStyle = cor;
+context.strokeStyle = cor;
+
+context.lineWidth = 5;
+
+context.beginPath();
+context.arc(200, 50, 30, 0, Math.PI*2);
+context.fill();
+
+context.beginPath();
+context.moveTo(200, 80);
+context.lineTo(200, 180);
+context.stroke();
+
+context.beginPath();
+context.moveTo(200, 84);
+context.lineTo(150, 130);
+
+context.moveTo(200, 84);
+context.lineTo(250, 130);
+
+context.stroke();
+
+context.beginPath();
+context.moveTo(200, 180);
+context.lineTo(160, 240);
+
+context.moveTo(200, 180);
+context.lineTo(230, 240);
+
+context.moveTo(160, 239);
+context.lineTo(150, 280);
+
+context.moveTo(230, 239);
+context.lineTo(238, 281);
+
+context.stroke();
+
+context.beginPath();
+context.strokeStyle = '#fff';
+context.arc(200, 50, 20, 0, Math.PI);
+context.stroke();
+
+context.beginPath();
+context.fillStyle = '#fff';
+context.arc(190, 40, 3, 0, Math.PI*2);
+context.fill();
+
+context.beginPath();
+context.fillStyle = '#fff';
+context.arc(210, 40, 3, 0, Math.PI*2);
+context.fill();
+</script>
+</center>
+</html>
+

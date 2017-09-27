@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+	
+		
+	.botao{
+	font-weight: bold;
+	padding: 10px;
+	border-bottom-style: ridge;
+	border-top-color: #414040;
+	border-right-color: #414040;
+	border-bottom-color: #414040;
+	border-left-color: #414040;
+	color: #000000;
+	
+}
+.botao:hover{
+	color: #330000;
+	background-color: #FFFFFF;
+	
+	
+}
+	.tela{
+	font-weight: bold;
+	padding: 10px;
+	border-bottom-style: ridge;
+	border-top-color: #414040;
+	border-right-color: #414040;
+	border-bottom-color: #414040;
+	border-left-color: #414040;
+	color: #000000;
+	
+}
+		.botaoLigar{
+	font-weight: bold;
+	padding: 10px;
+	border-bottom-style: ridge;
+	border-top-color: #414040;
+	border-right-color: #414040;
+	border-bottom-color: #414040;
+	border-left-color: #414040;
+	color: #025B01;
+	
+}
+.botaoLigar:hover{
+	color: #330000;
+	background-color: #FFFFFF;
+	
+	
+}
+		.botaoCancelar{
+	font-weight: bold;
+	padding: 10px;
+	border-bottom-style: ridge;
+	border-top-color: #414040;
+	border-right-color: #414040;
+	border-bottom-color: #414040;
+	border-left-color: #414040;
+	color: #F90004;
+	
+}
+.botaoCancelar:hover{
+	color: #330000;
+	background-color: #FFFFFF;
+	
+	
+}
