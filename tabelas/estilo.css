@@ -6,6 +6,10 @@ h2 {
 	font-size: 18px;
 }
 
+p {
+	font-family: sans-serif;
+}
+
 .tabelalista {
     width: 800px;
     height: 170px;
@@ -13,6 +17,8 @@ h2 {
     color: black;
     font-style: bold;
     font-family: sans-serif;
+    box-shadow: 5px 5px 3px grey;
+
 }
 
 .tabelalista2 {
@@ -22,6 +28,7 @@ h2 {
     color: black;
     font-style: bold;
     font-family: sans-serif;
+    box-shadow: 5px 5px 3px grey;
 }
 
 .imagem {
