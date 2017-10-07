@@ -1,0 +1,52 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pedidos</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+<center><a href="index.html"><img id="topo"  src="imagens/titulo.png" alt=" Café StarBugs"></a></center>
+<hr>   
+
+    
+<h2>PEDIDO ONLINE</h2>
+
+    <P>Preencha o formulário abaixo e clique em "Enviar Pedido" para solicitar uma caixa com grãos personalizados.</P> <br>
+<form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
+    <label>Escolha a variedade dos grãos:</label> 
+        <select name="variedade">
+        <option>Grãos da Colômbia</option>
+        <option>Grãos do Himalaia</option>
+        <option>Grãos do México</option>
+        <option>Chá Preto do Himalaia</option>
+        <option>Grãos da China</option>
+        </select><br>
+    
+    <label>Tipo:</label><br>
+        <input type="radio" name="tipo" value="inteiro"> Grãos Inteiros<br>
+        <input type="radio" name="tipo" value="moido"> Grãos Moídos<br>
+    
+    <label>Extra:</label><br>
+        <input type="checkbox" name="extra" value="embalar"> Embalar para presentes<br>
+        <input type="checkbox" name="extra" value="catalogo"> Quero um catálogo com cafés especiais<br>
+
+    <label>Enviar para:</label><br>
+        Nome:<br><input type="text" name="nome"><br>
+        Endereço:<br><input type="text" name="endereco"><br>
+        Cidade:<br> <input type="text" name="cidade"><br>
+        Estado:<br> <input type="text" name="estado"><br>
+        CEP:<br> <input type="text" name="cep"><br>
+    
+    <label>Observações:</label><br>
+    <textarea name="obs"></textarea><br>
+    
+        <input type="submit" value="Enviar Pedido">
+ </form>       
+
+    
+<center><a href="#topo">&uArr; voltar &uArr;</a></center>   
+</body>
+</html>
