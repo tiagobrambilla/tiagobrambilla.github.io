@@ -9,7 +9,7 @@ body {
 /* Títulos */
 h3 {
     color: #460303;
-    font-size: 18px;
+    font-size: 17px;
     font-family: sans-serif;
 }
 h2 {
@@ -87,10 +87,56 @@ tfoot {
 
 /* Formulários */
 
-textarea {
-    width: 400px;
-    height: 50px;
+.formheader {
+    text-align: left;
+    background-color: #f8f8f8;
+    color: #800000;
+    border: none;
+    padding: 8px;
+    font-family: sans-serif;
+}
     
+.formlabel {
+    text-align: right;
+    background-color: #f8f8f8;
+    border: none;
+    padding: 8px;
+    vertical-align: text-top;
+    white-space: nowrap;
+    font-family: sans-serif;
 }
 
+.formfield {
+    text-align: left;
+    background-color: #f8f8f8;
+    border: none;
+    padding: 8px;
+    font-family: sans-serif;
+}
+
+.formaction {
+    text-align: center;
+    border: none;
+    background-color: #f8f8f8;
+    padding: 8px;
+    padding-left: 8px;
+    font-family: sans-serif;
+}
+
+.formtable {
+    border: solid 1px;
+    border-color: #460303;
+    font-family: sans-serif;
+}
+
+textarea {
+    width: 500px;
+    font-family: sans-serif;
+}
+
+.botao {
+    padding: 2px;
+    font-family: sans-serif;
+    margin: 5px 5px 0 0;
+}
 

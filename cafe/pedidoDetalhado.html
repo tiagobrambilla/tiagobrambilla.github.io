@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pedidos</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+<center><a href="index.html"><img id="topo"  src="imagens/titulo.png" alt=" Café StarBugs"></a></center>
+<hr>   
+
+    
+<h2>PEDIDO ONLINE</h2>
+
+    <P>Preencha o formulário abaixo e clique em "Enviar Pedido" para solicitar uma caixa com grãos personalizados.</P> <br>
+<form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
+  <table cellspacing="0" class="formtable" >
+      <tr>
+            <th colspan="2" class="formheader"><label>Dados de Contato</label></th>
+      </tr>
+      <tr>
+            <td class="formlabel"><label>Nome Completo:</label></td>
+            <td class="formfield"><input size="40" placeholder="Fulano de Tal" required name="nome" type="text"></td>
+      </tr>
+
+      <tr>
+            <td class="formlabel"><label>E-mail:</label></td>
+            <td class="formfield"><input size="40" required placeholder="fulano.de.tal@gmail.com" name="email" type="email"></td>
+      </tr>
+      <tr>
+            <td class="formlabel"><label>Telefone:</label></td>
+            <td class="formfield"><input placeholder="(55)99999-9999" name="telefone" type="tel"></td>
+      </tr>
+      <tr>
+            <th colspan="2" class="formheader"><label>Informações do Pedido</label></th>
+      </tr>
+      <tr>
+            <td class="formlabel"><label>Variedade:</label></td>
+            <td class="formfield"><select name="variedade"><option>Grãos da Colômbia</option><option>Grãos do Himalaia</option><option>Grãos do México</option><option>Chá Preto do Himalaia</option><option>Grãos da China</option></select></td>
+      </tr>
+      <tr>
+            <td class="formlabel"><label>Quantidade:</label></td>
+            <td class="formfield"><input value="1" required min="1" max="100" name="quantidade" type="number"></td>
+      </tr>
+      <tr>
+            <td class="formlabel"><label>Data Limite:</label></td>
+            <td class="formfield"><input required min="13/10/2017" name="data" type="date"></td>
+      </tr>
+      <tr>
+            <td class="formlabel"><label>Tipo:</label></td>
+            <td class="formfield"><input checked type="radio" name="tipo" value="inteiro"> Grãos Inteiros<br><input type="radio" name="tipo" value="moido"> Grãos Moídos</td>
+      </tr>
+      <tr>
+            <td class="formlabel"><label>Extras:</label></td>
+            <td class="formfield"><input type="checkbox" name="extra" value="embalar"> Embalar para presentes<br><input checked type="checkbox" name="extra" value="catalogo"> Quero um catálogo com cafés especiais</td>
+      </tr>
+      <tr>
+            <th colspan="2" class="formheader"><label>Dados de Entrega</label></th>
+      </tr>
+      <tr>
+            <td class="formlabel"><label>Endereço:</label></td>
+            <td class="formfield"><input size="62" placeholder="Rua das Girafas, Apto 101 - Centro" required name="endereco" type="text"></td>
+      </tr>
+      <tr>
+            <td class="formlabel"><label>Cidade/Estado:</label></td>
+            <td class="formfield"><input placeholder="Iraí" required name="cidade" type="text"> / <select name="estado">
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option selected value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option></select></td>
+      </tr>
+       <tr>
+            <td class="formlabel"><label>CEP:</label></td>
+            <td class="formfield"><input placeholder="98460-000" required name="cep" type="number"></td>
+      </tr>
+       <tr>
+            <td class="formlabel"><label>Oservações:</label></td>
+            <td class="formfield"><textarea rows="4" cols="48" placeholder="Sem açucar e sem milho, por favor." name="obs"></textarea></td>
+      </tr>
+      <tr>
+            <td colspan="2" class="formaction"><input class="botao" type="reset" value="Limpar"><input class="botao" type="submit" value="Enviar Pedido"></td>
+      </tr>
+  </table> 
+</form>       
+
+<a href="index.html#nutri3">&#8617;</a>  
+</body>
+</html>
