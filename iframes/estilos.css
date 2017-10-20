@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+iframe {
+    height: 400px;
+    width: 1350px;
+    border: solid;
+    border-color: #2d2d9f; 
+}
