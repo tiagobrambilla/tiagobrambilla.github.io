@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Caixa Eletrônico</title>
-<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="estilos.css">
 
 <script>
 	var saldo = 0
@@ -21,7 +21,7 @@
 	}
 	
 	function mostrarSaldo() {
-		var senha = prompt("Digite a sua senha:")
+		var senha = document.getElementById("senha").value
 		
 		if ( senha == SENHA_PADRAO ) {
 		alert("Seu saldo é R$" + saldo)
@@ -33,7 +33,7 @@
 	
 	function sacar() {
 		
-		var senha = prompt("Digite a sua senha:")
+		var senha = document.getElementById("senha").value
 		
 		if (senha == SENHA_PADRAO) {
 			var valor = parseFloat( prompt("Que valor você deseja sacar?"))
@@ -63,13 +63,15 @@
 <center>
 	<div>
 <h2>Caixa Eletrônico</h2>
-		
+		<input id="senha" class="senha" type="text" placeholder="DIGITE A SUA SENHA"><br>
 		<input class="botao" type="button" value="SALDO" onClick="mostrarSaldo()">
 		<br>
 		<input class="botao" type="button" value="DEPÓSITO" onClick="deposito()">
 		<br>
 		<input class="botao" type="button" value="SAQUE" onClick="sacar()">
 		<br>
+        <input class="obs" type="text" disabled value="Este é apenas um teste, a senha padrão é '13579'.">
+        
 	</div>
 </center>
 </body>
