@@ -9,12 +9,44 @@
 	var saldo = 0
 	var saques = 0
 	const SENHA_PADRAO = "13579"
+    
+    var lancamentos = new Array()
+    var cont = 0
+    
+    function mostrarData(data) {
+			 
+        return data.getDate() + "/" + data.getMonth() + "/" + data.getFullYear() 
+			 
+    }
+    
+    function gerarTabela(dados) {
+        
+        var tabela = "<table> <tr> <th class='extrato' colspan='4'>Extrato</th> </tr> <tr> <th>Tipo</th> <th>Descrição</th> <th>Valor</th> <th>Data</th> </tr>"
+          
+        var linhas = dados.length
+        
+        for (var x=0; x<linhas; x++) {
+            
+            tabela = tabela + "<tr>"
+            
+            tabela = tabela + "<td>" + dados[x][0] + "</td>"
+            tabela = tabela + "<td>" + dados[x][1] + "</td>"
+            tabela = tabela + "<td> R$" + dados[x][2] + "</td>"
+            tabela = tabela + "<td>" + mostrarData(dados[x][3]) + "</td>"
+            
+            tabela = tabela + "</tr>"
+        }
+        
+        return tabela + "</table>"
+    }
 	
 	function deposito() {
 		var valor = parseFloat( prompt("Que valor você deseja depositar?"))
 		
 		if ( (valor > 0) && (valor <= 2000) ) {
 		    saldo = saldo + valor
+            lancamentos[cont] = new Array("C ", "Depósito ", valor, new Date() )
+            cont ++
 		} else {
 			alert("Valor inválido!")
 		}
@@ -47,6 +79,9 @@
 				if ( saldo >= (valor + tarifa) ) {
 					saques = saques + 1
 					saldo = saldo - valor - tarifa	
+                    lancamentos[cont] = new Array("D ", "Saque ", valor, new Date() )
+                    cont ++
+                    
 				} else {
 					alert("Saldo insuficiente!")
 				}
@@ -55,24 +90,40 @@
 			alert("Senha inválida!")
 		}
 	}
+    
+    function extrato() {
+		var senha = document.getElementById("senha").value
+		
+		if ( senha == SENHA_PADRAO ) {
+		
+            document.getElementById("extrato").innerHTML = gerarTabela(lancamentos)
+            
+           
+		} else {
+			alert("Senha inválida!")
+		}
+		
+	}
 </script>
 
 </head>
 
 <body>
-<center>
-	<div>
+	<div align="center">
 <h2>Caixa Eletrônico</h2>
-		<input id="senha" class="senha" type="text" placeholder="DIGITE A SUA SENHA"><br>
+        <input id="senha" class="senha" type="text" value="13579" placeholder="DIGITE A SUA SENHA">
+        <br>
 		<input class="botao" type="button" value="SALDO" onClick="mostrarSaldo()">
 		<br>
 		<input class="botao" type="button" value="DEPÓSITO" onClick="deposito()">
 		<br>
 		<input class="botao" type="button" value="SAQUE" onClick="sacar()">
 		<br>
+        <input class="botao" type="button" value="EXTRATO" onClick="extrato()">
+        <br>
         <input class="obs" type="text" disabled value="Este é apenas um teste, a senha padrão é '13579'.">
-        
-	</div>
-</center>
+    </div>
+    
+    <div align="center" id="extrato"></div>
 </body>
 </html>

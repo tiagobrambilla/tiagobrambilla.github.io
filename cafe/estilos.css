@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    background-color: #fff;
+    font-family: sans-serif;
+}
+
+/* Títulos */
+h3 {
+    color: #460303;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+h2 {
+    color: #460303;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+/* Links */
+a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; 
+    color: #f00
+}
+
+/* Imagens */
+.image {
+    margin: 1px 4px 0 0;
+    padding: 1px; /* Tamanho da borda */
+    background-color: #fff; 
+    border: 3px solid #5d3232; /* Cor da borda */
+    border-radius: 2px;
+    height: 180px;
+    width: 210px;
+    -webkit-filter:grayscale(100%);
+}
+.image:hover{
+    -webkit-filter:grayscale(0%);
+    transition: 1s;
+}
+
+/* Linhas */
+hr {
+    color: #800000;
+    background-color: #800000;
+    height: 2px;
+}
+
+/* Tabelas */
+table {
+    width: 600px;
+    height: 300px;
+}
+
+th {
+    border: 1px solid black;
+    font-family: sans-serif;
+    background-color: #800000;
+    color: white;
+}
+
+td {
+    border: 1px solid black;
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+}
+
+tfoot {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 13px;
+    color: #848484;
+    background-color: #f2f2f2;
+}
+
+.info {
+    background-color: #800000;
+    color: white;
+}
+
+/* Formulários */
+
+.formheader {
+    text-align: left;
+    background-color: #f8f8f8;
+    color: #800000;
+    border: none;
+    padding: 8px;
+    font-family: sans-serif;
+}
+    
+.formlabel {
+    text-align: right;
+    background-color: #f8f8f8;
+    border: none;
+    padding: 8px;
+    vertical-align: text-top;
+    white-space: nowrap;
+    font-family: sans-serif;
+}
+
+.formfield {
+    text-align: left;
+    background-color: #f8f8f8;
+    border: none;
+    padding: 8px;
+    font-family: sans-serif;
+}
+
+.formaction {
+    text-align: left;
+    border: none;
+    background-color: #f8f8f8;
+    padding: 8px;
+    padding-left: 8px;
+    font-family: sans-serif;
+}
+
+.formtable {
+    border: solid 1px;
+    border-color: #460303;
+    font-family: sans-serif;
+}
+
+textarea {
+    width: 500px;
+    font-family: sans-serif;
+}
+
+.botao {
+    padding: 2px;
+    font-family: sans-serif;
+    margin: 5px 5px 0 0;
+}
+

@@ -5,7 +5,7 @@ body {
 	background-color: #215DD7;
 }
 h2 {
-	font-family: arial;
+	font-family: sans-serif;
 	background-color: #FFDD00;
     color: #0D007E;
 	border: solid;
@@ -18,7 +18,7 @@ h2 {
 .botao {
   font-family: arial;
   font-weight: bold;
-  color: #0D007E !important;
+  color: #0D007E;
   font-size: 14px;
   padding: 8px 15px;
   -moz-border-radius: 5px;
@@ -31,19 +31,24 @@ h2 {
   margin: 10px 10px 0 0;
 }
 .botao:hover {
-  color: #14396A !important;
+  color: #14396A;
   background: #fff;
 }
 
 .senha {
-  border: solid;
-  border-radius: 10px;
-  padding: 8px 15px;
-  height: 30px;
-  width: 300px;
+  height: 32px;
+  width: 176px;
   margin: 10px 10px 0 0;
   color: #0D007E;
   text-align: center;
+  border: 2px solid #0D007E;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: normal;
+  padding: 8px 15px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .obs {
@@ -57,4 +62,40 @@ h2 {
   margin: 10px 10px 0 0;
 }
 
+table {
+  width: 310px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid;
+  text-align: center;
+  color: #0D007E;
+  background: #FFDD00;
+  font-style: bold;
+  font-family: sans-serif;
+  padding: 8px 15px;
+  margin: 10px 10px 0 0;
+}
+
+#extrato {
+  padding: 10px;
+}
+
+.extrato {
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+td {
+  padding: 10px;
+  color: #000000;
+  background-color: #FFDD00; 
+  border-radius: 5px;
+}
+
+th {
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
 	
