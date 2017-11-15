@@ -74,6 +74,7 @@
 			
 			if (saques >= 3) { 
 				tarifa = 1.5
+				        alert("Atenção! Os próximos saques serão tarifados em R$" + tarifa)
 			}
 								   
 				if ( saldo >= (valor + tarifa) ) {
@@ -111,7 +112,7 @@
 <body>
 	<div align="center">
 <h2>Caixa Eletrônico</h2>
-        <input id="senha" class="senha" type="text" value="13579" placeholder="DIGITE A SUA SENHA">
+        <input id="senha" class="senha" type="text" placeholder="DIGITE A SUA SENHA">
         <br>
 		<input class="botao" type="button" value="SALDO" onClick="mostrarSaldo()">
 		<br>
