@@ -8,8 +8,8 @@
 }
 
 .mapa {
-    width: 1200px;
-    height: 580px;
+    width: 1250px;
+    height: 585px;
     border-radius: 10px;
     border: 2px solid;
     padding: 5px;
@@ -29,6 +29,7 @@ h2 {
     font-size: 22px;
     color: #2a3946;
     font-variant: small-caps;
+    font-family: sans-serif;
 }
 
 
@@ -39,21 +40,26 @@ h2 {
     float: right;
 }
 
-div.figure {
-  float: center;
-  width: 50%;
-  text-align: left;
-  font-size: smaller;
-  text-indent: 0;
-  margin: 0.5em;
-  padding: 0.5em;
-}
-
-div.title {
+#title {
     text-align: center;
 }
 
-div.projeto {
-    text-align: justify;
+p {
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+#conteudo {
+    font-family: sans-serif;
+}
+
+figcaption {
+    font-size: smaller;
+    text-align: left;
+}
+
+div.figcaption {
+    width: 900px;
 }
 
