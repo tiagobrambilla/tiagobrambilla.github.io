@@ -45,13 +45,14 @@ h2 {
 }
 
 p {
-    text-align: left;
+    text-align: justify;
     font-family: sans-serif;
     font-size: 16px;
 }
 
 #conteudo {
     font-family: sans-serif;
+    padding: 12px;
 }
 
 figcaption {
@@ -63,3 +64,26 @@ div.figcaption {
     width: 900px;
 }
 
+div.paragrafo {
+    width: 1250px;
+    margin-left: 20px;
+}
+
+ul {
+    text-align: justify;
+    
+}
+
+a {
+    font-family: sans-serif;
+    color: #c18e05;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a:hover {
+    font-family: sans-serif;
+    color: #c18e05;
+    font-style: normal;
+    text-decoration: underline;
+}
