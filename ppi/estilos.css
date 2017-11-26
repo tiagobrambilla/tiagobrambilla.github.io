@@ -60,7 +60,11 @@ figcaption {
     text-align: left;
 }
 
-div.figcaption {
+div.figcaption-um {
+    width: 1250px;
+}
+
+div.figcaption-dois {
     width: 900px;
 }
 
@@ -87,3 +91,19 @@ a:hover {
     font-style: normal;
     text-decoration: underline;
 }
+
+/* CSS Bootstrap */
+
+.carousel {
+    width: 1000px; /* Altera a largura do carousel */
+    height: 585px; /* Altera a altura do carousel */
+}
+
+.d-block {
+    border-radius: 10px; /* Altera as bordas da imagem do carousel */
+}
+
+.carousel-inner {
+    border-radius: 10px; /* Altera as bordas da transição de slide do carousel */
+}
+
