@@ -74,8 +74,11 @@ div.paragrafo {
 }
 
 ul {
-    text-align: justify;
-    
+    text-align: justify;  
+}
+
+li {
+    text-align: justify;  
 }
 
 a {
@@ -90,6 +93,10 @@ a:hover {
     color: #c18e05;
     font-style: normal;
     text-decoration: underline;
+}
+
+div.lista {
+    text-align: center;
 }
 
 /* CSS Bootstrap */
