@@ -88,6 +88,11 @@ div.paragrafo {
     margin-left: 20px;
 }
 
+div.objetivos {
+    width: 1250px;
+    margin-left: 250px;
+}
+
 ul {
     text-align: justify;
 }
