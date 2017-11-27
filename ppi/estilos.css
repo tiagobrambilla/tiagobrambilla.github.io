@@ -1,12 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 
+/* Altera as imagens de exemplo */
 .exemplo {
     width: 900px;
     height: 530px;
     border-radius: 10px;
 }
 
+/* Mapa conceitual sobre inclusão social e inclusão digital */
 .mapa {
     width: 1250px;
     height: 585px;
@@ -32,7 +34,7 @@ h2 {
     font-family: sans-serif;
 }
 
-
+/* Símbolo do IFF no final da página */
 .iff {
     width: 100px;
     height: 120px;
@@ -40,64 +42,71 @@ h2 {
     float: right;
 }
 
+#iff {
+    width: 1270px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+/* Títulos */
 #title {
     text-align: center;
 }
 
+/* Altera o texto de todos os parágrafos da página */
 p {
     text-align: justify;
     font-family: sans-serif;
     font-size: 16px;
 }
 
+/* Altera todo o conteúdo da página */
 #conteudo {
     font-family: sans-serif;
     padding: 12px;
 }
 
+/* Altera todas as descrições de imagens */
 figcaption {
     font-size: smaller;
     text-align: left;
 }
 
+/* Altera a descrição do Mapa Conceitual */
 div.figcaption-um {
     width: 1250px;
 }
 
+/* Altera a descrição da imagem*/
 div.figcaption-dois {
     width: 900px;
 }
 
+/* Altera todos os parágrafos da página */
 div.paragrafo {
     width: 1250px;
     margin-left: 20px;
 }
 
 ul {
-    text-align: justify;  
+    text-align: justify;
 }
 
-li {
-    text-align: justify;  
-}
-
-a {
+a { /* Links */
     font-family: sans-serif;
     color: #c18e05;
     font-style: normal;
     text-decoration: none;
 }
 
-a:hover {
+a:hover { /* Hover link */
     font-family: sans-serif;
     color: #c18e05;
     font-style: normal;
     text-decoration: underline;
 }
 
-div.lista {
-    text-align: center;
-}
+
 
 /* CSS Bootstrap */
 
