@@ -10,12 +10,13 @@
 
 /* Mapa conceitual sobre inclusão social e inclusão digital */
 .mapa {
-    width: 1250px;
-    height: 585px;
+    width: 1260px;
+    height: 595px;
     border-radius: 10px;
     border: 2px solid;
     padding: 5px;
     border-color: #a35012;
+    margin-left: 1%;
 }
 
 h1 {
