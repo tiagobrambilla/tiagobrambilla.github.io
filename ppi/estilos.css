@@ -3,14 +3,14 @@
 
 /* Altera as imagens de exemplo */
 .exemplo {
-    width: 76%;
+    max-width: 76%;
     height: 585px;
     border-radius: 10px;
 }
 
 /* Mapa conceitual sobre inclusão social e inclusão digital */
 .mapa {
-    width: 95%;
+    max-width: 95%;
     height: 595px;
     border-radius: 10px;
     border: 2px solid;
@@ -51,7 +51,7 @@ h2 {
 }
 
 #logo {
-    width: 98%;
+    max-width: 98%;
     height: 100px;
     text-align: center;
 }
@@ -98,12 +98,12 @@ div.figcaption-dois {
 
 /* Altera todos os parágrafos da página */
 div.paragrafo {
-    width: 1250px;
+    max-width: 95%;
     margin-left: 20px;
 }
 
 div.objetivos {
-    width: 1250px;
+    max-width: 95%;
     margin-left: 250px;
 }
 
@@ -129,7 +129,7 @@ a:hover { /* Hover link */
 /* CSS Bootstrap */
 
 .carousel {
-    width: 76%; /* Altera a largura do carousel */
+    max-width: 76%; /* Altera a largura do carousel */
     height: 585px; /* Altera a altura do carousel */
 }
 
