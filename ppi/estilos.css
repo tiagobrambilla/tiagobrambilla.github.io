@@ -3,14 +3,14 @@
 
 /* Altera as imagens de exemplo */
 .exemplo {
-    width: 1000px;
+    width: 76%;
     height: 585px;
     border-radius: 10px;
 }
 
 /* Mapa conceitual sobre inclusão social e inclusão digital */
 .mapa {
-    width: 1260px;
+    width: 95%;
     height: 595px;
     border-radius: 10px;
     border: 2px solid;
@@ -35,19 +35,33 @@ h2 {
     font-family: sans-serif;
 }
 
-/* Símbolo do IFF no final da página */
+/* Logos */
 .iff {
-    width: 100px;
-    height: 120px;
-    border-radius: 10px;
-    float: right;
+    width: 85px;
+    height: 100px;
+    float: left;
+    margin-top: 2px;
 }
 
-#iff {
-    width: 1270px;
+.tsi {
+    width: 80px;
     height: 100px;
-    margin-bottom: 30px;
+    float: right;
+    margin-top: 2px;
 }
+
+#logo {
+    width: 98%;
+    height: 100px;
+    text-align: center;
+}
+
+.titulo-principal {
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 5px;
+}
+
 
 /* Títulos */
 #title {
@@ -64,7 +78,6 @@ p {
 /* Altera todo o conteúdo da página */
 #conteudo {
     font-family: sans-serif;
-    padding: 12px;
 }
 
 /* Altera todas as descrições de imagens */
@@ -100,14 +113,13 @@ ul {
 
 a { /* Links */
     font-family: sans-serif;
-    color: #c18e05;
     font-style: normal;
+    color: #7c9bb4;
     text-decoration: none;
 }
 
 a:hover { /* Hover link */
     font-family: sans-serif;
-    color: #c18e05;
     font-style: normal;
     text-decoration: underline;
 }
@@ -117,7 +129,7 @@ a:hover { /* Hover link */
 /* CSS Bootstrap */
 
 .carousel {
-    width: 1000px; /* Altera a largura do carousel */
+    width: 76%; /* Altera a largura do carousel */
     height: 585px; /* Altera a altura do carousel */
 }
 
@@ -128,4 +140,5 @@ a:hover { /* Hover link */
 .carousel-inner {
     border-radius: 10px; /* Altera as bordas da transição de slide do carousel */
 }
+
 
