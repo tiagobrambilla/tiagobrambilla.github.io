@@ -1,0 +1,43 @@
+.carousel {
+    width: 91%; /* Altera a largura do carousel */
+    height: ; /* Altera a altura do carousel */
+    margin-left: 5%;
+}
+
+.form-group {
+    width: 250px;
+}
+
+form {
+    margin-left: 5%;
+}
+
+.td-paragrafo1 {
+    padding-left: 5%;
+    padding-right: 1%;
+}
+
+.td-paragrafo2 {
+    padding-right: 5%;
+    padding-left: 1%;
+}
+
+.paragrafo {
+    text-align: justify;
+}
+
+.google {
+    margin-left: 5%;
+    width: 46%;
+}
+
+.fraco {
+	color:#bebebe;
+}
+
+.table {
+    width: 40%;
+    float: right;
+    margin-right: 5%;
+    
+}
