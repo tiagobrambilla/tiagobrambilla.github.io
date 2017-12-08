@@ -14,12 +14,15 @@ form {
 
 .td-paragrafo1 {
     padding-left: 5%;
-    padding-right: 1%;
+    padding-right: 0%;
+    text-align: justify;
+    width: 48%;
 }
 
 .td-paragrafo2 {
     padding-right: 5%;
-    padding-left: 1%;
+    padding-left: 3.5%;
+    text-align: justify;
 }
 
 .paragrafo {
@@ -28,7 +31,7 @@ form {
 
 .google {
     margin-left: 5%;
-    width: 46%;
+    width: 43%;
 }
 
 .fraco {
@@ -36,8 +39,12 @@ form {
 }
 
 .table {
-    width: 40%;
+    width: 43%;
     float: right;
     margin-right: 5%;
     
+}
+
+.footer {
+    line-height: 2.5;
 }
