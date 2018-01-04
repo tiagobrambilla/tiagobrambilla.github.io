@@ -1,5 +1,6 @@
+
 .carousel {
-    width: 91%; /* Altera a largura do carousel */
+    width: 90%; /* Altera a largura do carousel */
     height: ; /* Altera a altura do carousel */
     margin-left: 5%;
 }
@@ -14,16 +15,20 @@ form {
 
 .td-paragrafo1 {
     padding-left: 5%;
-    padding-right: 0%;
+    padding-right: 1%;
     text-align: justify;
-    width: 48%;
+    width: 50%;
+    vertical-align: top;
 }
 
 .td-paragrafo2 {
     padding-right: 5%;
-    padding-left: 3.5%;
+    padding-left: 1%;
     text-align: justify;
+    width: 50%;
+    vertical-align: top; 
 }
+
 
 .paragrafo {
     text-align: justify;
@@ -31,7 +36,7 @@ form {
 
 .google {
     margin-left: 5%;
-    width: 43%;
+    width: 44%;
 }
 
 .fraco {
@@ -39,7 +44,7 @@ form {
 }
 
 .table {
-    width: 43%;
+    width: 44%;
     float: right;
     margin-right: 5%;
     
