@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<title>Pedidos</title>
+    <!-- Meta tags necessárias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+   
+    <!-- Bibliotecas JavaScript que devem ser incluídas nessa ordem: jQuery.js, Popper.js e Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html"><img class="logo" src="imagens/logo.png" class="logo"><p class="plogo" >StarBugs<br>Café</p></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html#sobre">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html#pagamento">Métodos de Pagamento</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pedidoDetalhado.html">Pedidos Online</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html#contato">Contato</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    
+<div align="center"><h4 class="titulo">Pedido Online</h4></div>
+<hr>
+    <P class="paragrafo2">Preencha o formulário abaixo e clique em "Enviar Pedido" para solicitar uma caixa com grãos personalizados.</P>
+<form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
+   
+  <table cellspacing="0" class="formtable" >
+       
+      <tr>
+            <th colspan="2" class="formheader"><label>Dados de Contato</label></th>
+      </tr>
+      <tr>
+            <td class="formlabel"><label>Nome Completo:</label></td>
+            <td class="formfield"><input size="40"  required name="nome" type="text"></td>
+      </tr>
+
+      <tr>
+            <td class="formlabel"><label>E-mail:</label></td>
+            <td class="formfield"><input size="40" required name="email" type="email"></td>
+      </tr>
+      <tr>
+            <td class="formlabel"><label>Telefone:</label></td>
+            <td class="formfield"><input placeholder="(xx)xxxxx-xxxx" name="telefone" type="tel"></td>
+      </tr>
+      <tr>
+            <th colspan="2" class="formheader"><label>Informações do Pedido</label></th>
+      </tr>
+      <tr>
+            <td class="formlabel"><label>Variedade:</label></td>
+            <td class="formfield"><select name="variedade"><option>Grãos da Colômbia</option><option>Grãos do Himalaia</option><option>Grãos do México</option><option>Chá Preto do Himalaia</option><option>Grãos da China</option></select></td>
+      </tr>
+      <tr>
+            <td class="formlabel"><label>Quantidade:</label></td>
+            <td class="formfield"><input value="1" required min="1" max="100" name="quantidade" type="number"></td>
+      </tr>
+      <tr>
+            <td class="formlabel"><label>Data Limite:</label></td>
+            <td class="formfield"><input required min="13/10/2017" name="data" type="date"></td>
+      </tr>
+      <tr>
+            <td class="formlabel"><label>Tipo:</label></td>
+            <td class="formfield"><input checked type="radio" name="tipo" value="inteiro"> Grãos Inteiros<br><input type="radio" name="tipo" value="moido"> Grãos Moídos</td>
+      </tr>
+      <tr>
+            <td class="formlabel"><label>Extras:</label></td>
+            <td class="formfield"><input type="checkbox" name="extra" value="embalar"> Embalar para presentes<br><input checked type="checkbox" name="extra" value="catalogo"> Quero um catálogo com cafés especiais</td>
+      </tr>
+      <tr>
+            <th colspan="2" class="formheader"><label>Dados de Entrega</label></th>
+      </tr>
+      <tr>
+            <td class="formlabel"><label>Endereço:</label></td>
+            <td class="formfield"><input size="62" required name="endereco" type="text"></td>
+      </tr>
+      <tr>
+            <td class="formlabel"><label>Cidade/Estado:</label></td>
+            <td class="formfield"><input  required name="cidade" type="text"> / <select name="estado">
+            <option value="AC">AC</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="AM">AM</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="DF">DF</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="MA">MA</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="MG">MG</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PR">PR</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option selected value="RS">RS</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+            <option value="SE">SE</option>
+            <option value="TO">TO</option></select></td>
+      </tr>
+       <tr>
+            <td class="formlabel"><label>CEP:</label></td>
+            <td class="formfield"><input  required name="cep" type="text"></td>
+      </tr>
+       <tr>
+            <td class="formlabel"><label>Oservações:</label></td>
+            <td class="formfield"><textarea rows="4" cols="48"  name="obs"></textarea></td>
+      </tr>
+      <tr>
+            <td class="formaction"></td>
+            <td class="formaction"><input class="btn btn-success" type="submit" value="Enviar"><input class="btn btn-danger" type="reset" value="Limpar"></td>
+      </tr>
+  </table> 
+</form>       
+
+        <div align="center"><footer class="text-muted">
+      <div class="container">
+        
+        <p>Projeto desenvolvido por: <a class="float-right" href="#">Topo &uArr;</a>
+        <br>© Tiago Brambilla - <a href="https://www.facebook.com/tiagobrambilla" target="_blank">fb.com/tiagobrambilla</a>
+</p>
+        
+      </div>
+    </footer>
+    </div>
+</body>
+</html>
