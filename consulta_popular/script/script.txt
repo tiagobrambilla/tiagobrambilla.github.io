@@ -1,0 +1,42 @@
+CREATE TABLE USUARIOS (
+    login VARCHAR(80) NOT NULL PRIMARY KEY,
+    nome  VARCHAR(60) NOT NULL,
+    senha VARCHAR(20) NOT NULL,
+    tipo  CHAR(1) NOT NULL DEFAULT 'E'
+);
+
+INSERT INTO usuarios VALUES ('adm',  'Administrador',  '123', 'A');
+
+CREATE TABLE areas (
+    id_area int not null auto_increment primary key,
+    descr_area varchar(80) not null
+);
+
+CREATE TABLE prioridades(
+    id_prioridade INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+    descr_prioridade VARCHAR( 120 ) NOT NULL ,
+    id_area INT NOT NULL
+);
+
+ALTER TABLE prioridades ADD CONSTRAINT fkArea 
+      FOREIGN KEY (id_area) REFERENCES areas (id_area);
+
+CREATE TABLE votos (
+    login VARCHAR(80) NOT NULL PRIMARY KEY,
+    data_hora TIMESTAMP not null DEFAULT CURRENT_TIMESTAMP,
+    id_prioridade INT NOT NULL
+);
+
+ALTER TABLE votos ADD CONSTRAINT fkUsuario 
+      FOREIGN KEY (login) REFERENCES usuarios (login);
+
+ALTER TABLE votos ADD CONSTRAINT fkPrioridade 
+      FOREIGN KEY (id_prioridade) REFERENCES prioridades (id_prioridade);
+
+
+
+
+
+
+
+
